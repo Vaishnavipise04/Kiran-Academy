@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HireTrack | Job Openings</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div class="layout">
+    <aside class="sidebar">
+        <div class="brand">
+            <span class="brand-mark">HT</span>
+            <div><strong>HireTrack</strong><span>Placement Cell</span></div>
+        </div>
+        <nav>
+            <p class="nav-label">Workspace</p>
+            <div class="nav">
+                <a href="index.html"><span class="nav-dot"></span>Dashboard</a>
+                <a href="candidates.html"><span class="nav-dot"></span>Candidates</a>
+                <a href="companies.html"><span class="nav-dot"></span>Companies</a>
+                <a class="active" href="jobs.html"><span class="nav-dot"></span>Job Openings</a>
+                <a href="applications.html"><span class="nav-dot"></span>Applications</a>
+                <a href="interviews.html"><span class="nav-dot"></span>Interviews</a>
+                <a href="placements.html"><span class="nav-dot"></span>Placements</a>
+            </div>
+        </nav>
+        <div class="sidebar-footer">
+            <strong>Eligibility first</strong>
+            The Java service verifies every criterion before an application can enter the pipeline.
+        </div>
+    </aside>
+
+    <main class="main">
+        <header class="topbar">
+            <div class="search">
+                <input type="text" placeholder="Search roles, technology or company..." aria-label="Search">
+                <kbd>Ctrl K</kbd>
+            </div>
+            <div class="top-actions">
+                <button class="icon-button" type="button" aria-label="Notifications">
+                    <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                        <path d="M18 8a6 6 0 1 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9"></path>
+                        <path d="M10 21h4"></path>
+                    </svg>
+                    <span class="notification-dot"></span>
+                </button>
+                <div class="user-chip">
+                    <span class="avatar">RC</span>
+                    <div><strong>Priya Menon</strong><small>Recruiter</small></div>
+                </div>
+            </div>
+        </header>
+
+        <section class="page-head">
+            <div>
+                <p class="eyebrow">Opportunities</p>
+                <h1>Job openings</h1>
+                <p class="subtitle">Publish roles, define eligibility criteria and track candidate demand against each opening.</p>
+            </div>
+            <div class="actions">
+                <button class="btn btn-ghost" type="button">Export openings</button>
+                <button class="btn btn-primary" type="button">+ Create job opening</button>
+            </div>
+        </section>
+
+        <section class="stat-grid" style="grid-template-columns: repeat(4, minmax(0, 1fr));">
+            <article class="stat-card">
+                <p class="stat-label">Open roles</p>
+                <p class="stat-value">42</p>
+                <p class="stat-meta">18 hiring companies</p>
+            </article>
+            <article class="stat-card">
+                <p class="stat-label">Applications received</p>
+                <p class="stat-value">1,120</p>
+                <p class="stat-meta">Across all open roles</p>
+            </article>
+            <article class="stat-card">
+                <p class="stat-label">Average package</p>
+                <p class="stat-value">6.4</p>
+                <p class="stat-meta">LPA across open roles</p>
+            </article>
+            <article class="stat-card">
+                <p class="stat-label">Closing this week</p>
+                <p class="stat-value">7</p>
+                <p class="stat-meta">Deadline within 7 days</p>
+            </article>
+        </section>
+
+        <section class="card toolbar">
+            <div class="filters">
+                <div class="search-inline">
+                    <input class="input" type="text" placeholder="Search job title" aria-label="Search job title">
+                </div>
+                <select class="select" aria-label="Technology">
+                    <option>All technologies</option>
+                    <option>Java</option>
+                    <option>Python</option>
+                    <option>AWS</option>
+                    <option>Testing</option>
+                </select>
+                <select class="select" aria-label="Location">
+                    <option>All locations</option>
+                    <option>Bengaluru</option>
+                    <option>Pune</option>
+                    <option>Hyderabad</option>
+                    <option>Mumbai</option>
+                    <option>Remote</option>
+                </select>
+                <select class="select" aria-label="Status">
+                    <option>Open only</option>
+                    <option>On hold</option>
+                    <option>Closed</option>
+                    <option>All statuses</option>
+                </select>
+            </div>
+            <span class="badge badge-success">42 open</span>
+        </section>
+
+        <section class="job-grid">
+            <article class="card job-card">
+                <div class="job-top">
+                    <div>
+                        <h3>Java Backend Developer</h3>
+                        <p>TechNova Solutions &middot; Bengaluru</p>
+                    </div>
+                    <span class="logo">TN</span>
+                </div>
+                <div class="job-meta">
+                    <span class="chip">Java</span>
+                    <span class="chip">Spring Boot</span>
+                    <span class="chip">MySQL</span>
+                    <span class="chip">4 vacancies</span>
+                </div>
+                <div class="criteria">
+                    <div>Qualification<strong>B.Tech / BE / MCA</strong></div>
+                    <div>Passing year<strong>2024 or later</strong></div>
+                    <div>Minimum percentage<strong>65%</strong></div>
+                    <div>Backlogs allowed<strong>0</strong></div>
+                </div>
+                <div class="job-foot">
+                    <div class="package">7.50 LPA <small>&middot; deadline 15 Dec</small></div>
+                    <div class="actions">
+                        <button class="btn btn-ghost btn-sm" type="button">Details</button>
+                        <button class="btn btn-primary btn-sm" type="button">Apply</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card job-card">
+                <div class="job-top">
+                    <div>
+                        <h3>QA Automation Engineer</h3>
+                        <p>TechNova Solutions &middot; Pune</p>
+                    </div>
+                    <span class="logo violet">TN</span>
+                </div>
+                <div class="job-meta">
+                    <span class="chip">Selenium</span>
+                    <span class="chip">Java</span>
+                    <span class="chip">Testing</span>
+                    <span class="chip">2 vacancies</span>
+                </div>
+                <div class="criteria">
+                    <div>Qualification<strong>B.Tech / BCA / MCA</strong></div>
+                    <div>Passing year<strong>2023 or later</strong></div>
+                    <div>Minimum percentage<strong>60%</strong></div>
+                    <div>Backlogs allowed<strong>1</strong></div>
+                </div>
+                <div class="job-foot">
+                    <div class="package">5.00 LPA <small>&middot; deadline 30 Nov</small></div>
+                    <div class="actions">
+                        <button class="btn btn-ghost btn-sm" type="button">Details</button>
+                        <button class="btn btn-primary btn-sm" type="button">Apply</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card job-card">
+                <div class="job-top">
+                    <div>
+                        <h3>Data Analyst</h3>
+                        <p>DataBridge Systems &middot; Hyderabad</p>
+                    </div>
+                    <span class="logo green">DB</span>
+                </div>
+                <div class="job-meta">
+                    <span class="chip">Python</span>
+                    <span class="chip">SQL</span>
+                    <span class="chip">Excel</span>
+                    <span class="chip">3 vacancies</span>
+                </div>
+                <div class="criteria">
+                    <div>Qualification<strong>B.Sc / B.Tech / MCA</strong></div>
+                    <div>Passing year<strong>2024 or later</strong></div>
+                    <div>Minimum percentage<strong>70%</strong></div>
+                    <div>Backlogs allowed<strong>0</strong></div>
+                </div>
+                <div class="job-foot">
+                    <div class="package">6.50 LPA <small>&middot; deadline 21 Nov</small></div>
+                    <div class="actions">
+                        <button class="btn btn-ghost btn-sm" type="button">Details</button>
+                        <button class="btn btn-primary btn-sm" type="button">Apply</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card job-card">
+                <div class="job-top">
+                    <div>
+                        <h3>Cloud Support Associate</h3>
+                        <p>CloudSprint Labs &middot; Remote</p>
+                    </div>
+                    <span class="logo blue">CS</span>
+                </div>
+                <div class="job-meta">
+                    <span class="chip">AWS</span>
+                    <span class="chip">Linux</span>
+                    <span class="chip">Networking</span>
+                    <span class="chip">5 vacancies</span>
+                </div>
+                <div class="criteria">
+                    <div>Qualification<strong>B.Tech / BCA</strong></div>
+                    <div>Passing year<strong>2023 or later</strong></div>
+                    <div>Minimum percentage<strong>60%</strong></div>
+                    <div>Backlogs allowed<strong>1</strong></div>
+                </div>
+                <div class="job-foot">
+                    <div class="package">4.80 LPA <small>&middot; deadline 31 Dec</small></div>
+                    <div class="actions">
+                        <button class="btn btn-ghost btn-sm" type="button">Details</button>
+                        <button class="btn btn-primary btn-sm" type="button">Apply</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card job-card">
+                <div class="job-top">
+                    <div>
+                        <h3>Java Developer</h3>
+                        <p>FinEdge Technologies &middot; Mumbai</p>
+                    </div>
+                    <span class="logo red">FE</span>
+                </div>
+                <div class="job-meta">
+                    <span class="chip">Java</span>
+                    <span class="chip">Spring</span>
+                    <span class="chip">Hibernate</span>
+                    <span class="chip">2 vacancies</span>
+                </div>
+                <div class="criteria">
+                    <div>Qualification<strong>B.Tech / MCA</strong></div>
+                    <div>Passing year<strong>2025 only</strong></div>
+                    <div>Minimum percentage<strong>75%</strong></div>
+                    <div>Backlogs allowed<strong>0</strong></div>
+                </div>
+                <div class="job-foot">
+                    <div class="package">9.00 LPA <small>&middot; deadline 16 Nov</small></div>
+                    <div class="actions">
+                        <button class="btn btn-ghost btn-sm" type="button">Details</button>
+                        <button class="btn btn-primary btn-sm" type="button">Apply</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card job-card">
+                <div class="job-top">
+                    <div>
+                        <h3>Business Analyst</h3>
+                        <p>FinEdge Technologies &middot; Gurugram</p>
+                    </div>
+                    <span class="logo orange">FE</span>
+                </div>
+                <div class="job-meta">
+                    <span class="chip">Communication</span>
+                    <span class="chip">Excel</span>
+                    <span class="chip">SQL</span>
+                    <span class="chip">2 vacancies</span>
+                </div>
+                <div class="criteria">
+                    <div>Qualification<strong>BBA / B.Tech / MBA</strong></div>
+                    <div>Passing year<strong>2023 or later</strong></div>
+                    <div>Minimum percentage<strong>65%</strong></div>
+                    <div>Backlogs allowed<strong>0</strong></div>
+                </div>
+                <div class="job-foot">
+                    <div class="package">6.00 LPA <small>&middot; 11 Dec</small></div>
+                    <div class="actions">
+                        <span class="badge badge-warning">On hold</span>
+                        <button class="btn btn-ghost btn-sm" type="button">Details</button>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+</div>
+</body>
+</html>

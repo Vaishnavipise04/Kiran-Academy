@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HireTrack | Placement Dashboard</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div class="layout">
+    <aside class="sidebar">
+        <div class="brand">
+            <span class="brand-mark">HT</span>
+            <div>
+                <strong>HireTrack</strong>
+                <span>Placement Cell</span>
+            </div>
+        </div>
+        <nav>
+            <p class="nav-label">Workspace</p>
+            <div class="nav">
+                <a class="active" href="index.html"><span class="nav-dot"></span>Dashboard</a>
+                <a href="candidates.html"><span class="nav-dot"></span>Candidates</a>
+                <a href="companies.html"><span class="nav-dot"></span>Companies</a>
+                <a href="jobs.html"><span class="nav-dot"></span>Job Openings</a>
+                <a href="applications.html"><span class="nav-dot"></span>Applications</a>
+                <a href="interviews.html"><span class="nav-dot"></span>Interviews</a>
+                <a href="placements.html"><span class="nav-dot"></span>Placements</a>
+            </div>
+        </nav>
+        <div class="sidebar-footer">
+            <strong>Kiran Academy Placement Cell</strong>
+            Recruitment and placement overview for the current academic year.
+        </div>
+    </aside>
+
+    <main class="main">
+        <header class="topbar">
+            <div class="search">
+                <input type="text" placeholder="Search candidates, companies, jobs..." aria-label="Search">
+                <kbd>Ctrl K</kbd>
+            </div>
+            <div class="top-actions">
+                <button class="icon-button" type="button" aria-label="Notifications">
+                    <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                        <path d="M18 8a6 6 0 1 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9"></path>
+                        <path d="M10 21h4"></path>
+                    </svg>
+                    <span class="notification-dot"></span>
+                </button>
+                <div class="user-chip">
+                    <span class="avatar">AD</span>
+                    <div>
+                        <strong>Placement Admin</strong>
+                        <small>Administrator</small>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section class="page-head">
+            <div>
+                <p class="eyebrow">Overview</p>
+                <h1>Placement dashboard</h1>
+                <p class="subtitle">Track the complete recruitment lifecycle from candidate registration to final placement.</p>
+            </div>
+            <div class="actions">
+                <button class="btn btn-ghost" type="button">Export report</button>
+                <button class="btn btn-primary" type="button">+ Register candidate</button>
+            </div>
+        </section>
+
+        <section class="stat-grid">
+            <article class="stat-card" style="--glow: rgba(61, 91, 224, 0.09);">
+                <p class="stat-label">Registered candidates</p>
+                <p class="stat-value">1,248</p>
+                <p class="stat-meta"><strong>+42</strong> this month</p>
+            </article>
+            <article class="stat-card" style="--glow: rgba(19, 138, 98, 0.1);">
+                <p class="stat-label">Active candidates</p>
+                <p class="stat-value">986</p>
+                <p class="stat-meta">79% of registered pool</p>
+            </article>
+            <article class="stat-card" style="--glow: rgba(183, 121, 31, 0.1);">
+                <p class="stat-label">Open job openings</p>
+                <p class="stat-value">42</p>
+                <p class="stat-meta">Across <strong>18 companies</strong></p>
+            </article>
+            <article class="stat-card" style="--glow: rgba(122, 69, 216, 0.1);">
+                <p class="stat-label">Final placements</p>
+                <p class="stat-value">218</p>
+                <p class="stat-meta"><strong>+16</strong> joined this month</p>
+            </article>
+        </section>
+
+        <section class="grid-2">
+            <article class="card">
+                <div class="card-head">
+                    <div>
+                        <h2>Recruitment pipeline</h2>
+                        <p>Live application distribution across workflow stages</p>
+                    </div>
+                    <span class="badge badge-info">This cycle</span>
+                </div>
+                <div class="card-body">
+                    <div class="pipeline-row">
+                        <span>Applied</span>
+                        <div class="progress"><span style="width: 100%"></span></div>
+                        <span class="value">1,120</span>
+                    </div>
+                    <div class="pipeline-row">
+                        <span>Shortlisted</span>
+                        <div class="progress blue"><span style="width: 62%"></span></div>
+                        <span class="value">694</span>
+                    </div>
+                    <div class="pipeline-row">
+                        <span>Interview scheduled</span>
+                        <div class="progress orange"><span style="width: 41%"></span></div>
+                        <span class="value">459</span>
+                    </div>
+                    <div class="pipeline-row">
+                        <span>Interviewed</span>
+                        <div class="progress orange"><span style="width: 29%"></span></div>
+                        <span class="value">326</span>
+                    </div>
+                    <div class="pipeline-row">
+                        <span>Selected</span>
+                        <div class="progress green"><span style="width: 18%"></span></div>
+                        <span class="value">198</span>
+                    </div>
+                    <div class="pipeline-row">
+                        <span>Offer released</span>
+                        <div class="progress"><span style="width: 12%"></span></div>
+                        <span class="value">134</span>
+                    </div>
+                    <div class="pipeline-row">
+                        <span>Joined</span>
+                        <div class="progress green"><span style="width: 8%"></span></div>
+                        <span class="value">86</span>
+                    </div>
+                    <div class="legend">
+                        <span><i class="dot"></i>Applied stage</span>
+                        <span><i class="dot blue"></i>Shortlisting</span>
+                        <span><i class="dot orange"></i>Interview</span>
+                        <span><i class="dot green"></i>Offer / joining</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="card-head">
+                    <div>
+                        <h2>Placement snapshot</h2>
+                        <p>Current season conversion</p>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div style="display:flex;align-items:center;gap:26px;">
+                        <div style="width:138px;height:138px;border-radius:50%;background:conic-gradient(#3d5be0 0 48%, #7a45d8 48% 72%, #138a62 72% 88%, #e3e9f4 88% 100%);display:grid;place-items:center;flex:0 0 auto;">
+                            <div style="width:98px;height:98px;border-radius:50%;background:#fff;display:grid;place-items:center;text-align:center;">
+                                <div>
+                                    <strong style="display:block;font-size:22px;letter-spacing:-0.03em;">17.5%</strong>
+                                    <span style="font-size:10px;color:#7a86a1;text-transform:uppercase;letter-spacing:0.06em;">Placed</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="metric-list" style="flex:1;">
+                            <div class="metric-row" style="grid-template-columns: 1fr auto;">
+                                <span><i class="dot"></i> Offers accepted</span>
+                                <span>96</span>
+                            </div>
+                            <div class="metric-row" style="grid-template-columns: 1fr auto;">
+                                <span><i class="dot violet"></i> Offers pending</span>
+                                <span>38</span>
+                            </div>
+                            <div class="metric-row" style="grid-template-columns: 1fr auto;">
+                                <span><i class="dot green"></i> Joined candidates</span>
+                                <span>86</span>
+                            </div>
+                            <div class="metric-row" style="grid-template-columns: 1fr auto;">
+                                <span><i class="dot orange"></i> On hold</span>
+                                <span>27</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="metric-row" style="grid-template-columns: 130px 1fr 52px;">
+                        <span class="muted">Average package</span>
+                        <div class="progress green"><span style="width: 66%"></span></div>
+                        <span>6.4 LPA</span>
+                    </div>
+                    <div class="metric-row" style="grid-template-columns: 130px 1fr 52px;margin-top:12px;">
+                        <span class="muted">Highest package</span>
+                        <div class="progress"><span style="width: 90%"></span></div>
+                        <span>12.0 LPA</span>
+                    </div>
+                    <div class="metric-row" style="grid-template-columns: 130px 1fr 52px;margin-top:12px;">
+                        <span class="muted">Placement rate</span>
+                        <div class="progress blue"><span style="width: 79%"></span></div>
+                        <span>79%</span>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <section class="grid-2">
+            <article class="card">
+                <div class="card-head">
+                    <div>
+                        <h2>Upcoming interviews</h2>
+                        <p>Rounds scheduled in the next seven days</p>
+                    </div>
+                    <a class="btn btn-soft btn-sm" href="interviews.html">View schedule</a>
+                </div>
+                <div class="table-wrap" style="padding: 12px 22px 20px;">
+                    <table>
+                        <thead>
+                        <tr>
+                            <th>Candidate</th>
+                            <th>Company / Role</th>
+                            <th>Round</th>
+                            <th>Schedule</th>
+                            <th>Mode</th>
+                            <th>Status</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>
+                                <div class="person">
+                                    <span class="person-avatar">RV</span>
+                                    <div><span class="cell-strong">Rohan Verma</span><span class="cell-sub">KA2026003</span></div>
+                                </div>
+                            </td>
+                            <td><span class="cell-strong">TechNova</span><span class="cell-sub">QA Automation Engineer</span></td>
+                            <td>Technical R1</td>
+                            <td class="nowrap">02 Nov, 10:30</td>
+                            <td><span class="chip">Video</span></td>
+                            <td><span class="badge badge-info">Scheduled</span></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="person">
+                                    <span class="person-avatar alt-1">IN</span>
+                                    <div><span class="cell-strong">Ishita Nair</span><span class="cell-sub">KA2026004</span></div>
+                                </div>
+                            </td>
+                            <td><span class="cell-strong">FinEdge</span><span class="cell-sub">Java Developer</span></td>
+                            <td>Managerial</td>
+                            <td class="nowrap">03 Nov, 14:00</td>
+                            <td><span class="chip">In person</span></td>
+                            <td><span class="badge badge-warning">Awaiting</span></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="person">
+                                    <span class="person-avatar alt-2">DP</span>
+                                    <div><span class="cell-strong">Diya Patel</span><span class="cell-sub">KA2026002</span></div>
+                                </div>
+                            </td>
+                            <td><span class="cell-strong">DataBridge</span><span class="cell-sub">Data Analyst</span></td>
+                            <td>Technical R1</td>
+                            <td class="nowrap">04 Nov, 11:00</td>
+                            <td><span class="chip">Video</span></td>
+                            <td><span class="badge badge-info">Scheduled</span></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="person">
+                                    <span class="person-avatar alt-3">AS</span>
+                                    <div><span class="cell-strong">Aarav Sharma</span><span class="cell-sub">KA2026001</span></div>
+                                </div>
+                            </td>
+                            <td><span class="cell-strong">TechNova</span><span class="cell-sub">Java Backend Developer</span></td>
+                            <td>HR Round</td>
+                            <td class="nowrap">05 Nov, 16:30</td>
+                            <td><span class="chip">Telephonic</span></td>
+                            <td><span class="badge badge-violet">Confirmed</span></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="card-head">
+                    <div>
+                        <h2>Recent activity</h2>
+                        <p>Audit trail from the recruitment workflow</p>
+                    </div>
+                    <span class="badge badge-neutral">Live</span>
+                </div>
+                <div class="card-body">
+                    <ul class="timeline">
+                        <li class="highlight">
+                            <strong>Offer accepted by Meera Joshi</strong>
+                            <p>Cloud Support Associate at CloudSprint Labs</p>
+                            <time>Today, 09:42</time>
+                        </li>
+                        <li>
+                            <strong>Interview feedback submitted</strong>
+                            <p>Rohan Verma cleared Technical Round 1 with a PASS result</p>
+                            <time>Today, 08:15</time>
+                        </li>
+                        <li>
+                            <strong>New job opening published</strong>
+                            <p>Java Developer at FinEdge Technologies, 2 vacancies</p>
+                            <time>Yesterday, 18:04</time>
+                        </li>
+                        <li>
+                            <strong>Application shortlisted</strong>
+                            <p>Ishita Nair moved to SHORTLISTED for Java Backend Developer</p>
+                            <time>Yesterday, 16:27</time>
+                        </li>
+                        <li>
+                            <strong>Candidate registered</strong>
+                            <p>Meera Joshi added to the placement pool as KA2026006</p>
+                            <time>30 Oct, 11:50</time>
+                        </li>
+                    </ul>
+                </div>
+            </article>
+        </section>
+
+        <section class="card" style="margin-top:20px;">
+            <div class="card-head">
+                <div>
+                    <h2>Recent placements</h2>
+                    <p>Candidates who have completed joining formalities</p>
+                </div>
+                <a class="btn btn-ghost btn-sm" href="placements.html">All placements</a>
+            </div>
+            <div class="table-wrap" style="padding: 12px 22px 22px;">
+                <table>
+                    <thead>
+                    <tr>
+                        <th>Candidate</th>
+                        <th>Company</th>
+                        <th>Role</th>
+                        <th>Joining date</th>
+                        <th>Package</th>
+                        <th>Status</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td><div class="person"><span class="person-avatar alt-1">MJ</span><div><span class="cell-strong">Meera Joshi</span><span class="cell-sub">KA2026006</span></div></div></td>
+                        <td class="cell-strong">CloudSprint Labs</td>
+                        <td>Cloud Support Associate</td>
+                        <td>01 Dec 2026</td>
+                        <td class="cell-strong">4.80 LPA</td>
+                        <td><span class="badge badge-success">Placed</span></td>
+                    </tr>
+                    <tr>
+                        <td><div class="person"><span class="person-avatar alt-4">NK</span><div><span class="cell-strong">Nikhil Kulkarni</span><span class="cell-sub">KA2025114</span></div></div></td>
+                        <td class="cell-strong">TechNova Solutions</td>
+                        <td>Java Backend Developer</td>
+                        <td>28 Oct 2026</td>
+                        <td class="cell-strong">7.50 LPA</td>
+                        <td><span class="badge badge-success">Placed</span></td>
+                    </tr>
+                    <tr>
+                        <td><div class="person"><span class="person-avatar alt-2">SP</span><div><span class="cell-strong">Sneha Pillai</span><span class="cell-sub">KA2025098</span></div></div></td>
+                        <td class="cell-strong">DataBridge Systems</td>
+                        <td>Data Analyst</td>
+                        <td>24 Oct 2026</td>
+                        <td class="cell-strong">6.50 LPA</td>
+                        <td><span class="badge badge-success">Placed</span></td>
+                    </tr>
+                    <tr>
+                        <td><div class="person"><span class="person-avatar">AK</span><div><span class="cell-strong">Arjun Kapoor</span><span class="cell-sub">KA2025077</span></div></div></td>
+                        <td class="cell-strong">FinEdge Technologies</td>
+                        <td>Business Analyst</td>
+                        <td>21 Oct 2026</td>
+                        <td class="cell-strong">6.00 LPA</td>
+                        <td><span class="badge badge-info">Onboarding</span></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+</div>
+</body>
+</html>

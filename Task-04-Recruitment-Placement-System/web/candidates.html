@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HireTrack | Candidates</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div class="layout">
+    <aside class="sidebar">
+        <div class="brand">
+            <span class="brand-mark">HT</span>
+            <div><strong>HireTrack</strong><span>Placement Cell</span></div>
+        </div>
+        <nav>
+            <p class="nav-label">Workspace</p>
+            <div class="nav">
+                <a href="index.html"><span class="nav-dot"></span>Dashboard</a>
+                <a class="active" href="candidates.html"><span class="nav-dot"></span>Candidates</a>
+                <a href="companies.html"><span class="nav-dot"></span>Companies</a>
+                <a href="jobs.html"><span class="nav-dot"></span>Job Openings</a>
+                <a href="applications.html"><span class="nav-dot"></span>Applications</a>
+                <a href="interviews.html"><span class="nav-dot"></span>Interviews</a>
+                <a href="placements.html"><span class="nav-dot"></span>Placements</a>
+            </div>
+        </nav>
+        <div class="sidebar-footer">
+            <strong>Candidate master</strong>
+            Eligibility is evaluated against qualification, passing year, percentage, technology and backlog rules.
+        </div>
+    </aside>
+
+    <main class="main">
+        <header class="topbar">
+            <div class="search">
+                <input type="text" placeholder="Search by name, registration number, email..." aria-label="Search">
+                <kbd>Ctrl K</kbd>
+            </div>
+            <div class="top-actions">
+                <button class="icon-button" type="button" aria-label="Notifications">
+                    <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                        <path d="M18 8a6 6 0 1 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9"></path>
+                        <path d="M10 21h4"></path>
+                    </svg>
+                    <span class="notification-dot"></span>
+                </button>
+                <div class="user-chip">
+                    <span class="avatar">AD</span>
+                    <div><strong>Placement Admin</strong><small>Administrator</small></div>
+                </div>
+            </div>
+        </header>
+
+        <section class="page-head">
+            <div>
+                <p class="eyebrow">Master data</p>
+                <h1>Candidates</h1>
+                <p class="subtitle">Manage the candidate pool, profiles and placement eligibility information.</p>
+            </div>
+            <div class="actions">
+                <button class="btn btn-ghost" type="button">Import CSV</button>
+                <button class="btn btn-primary" type="button">+ Register candidate</button>
+            </div>
+        </section>
+
+        <section class="stat-grid" style="grid-template-columns: repeat(4, minmax(0, 1fr));">
+            <article class="stat-card">
+                <p class="stat-label">Total candidates</p>
+                <p class="stat-value">1,248</p>
+                <p class="stat-meta">Across 6 technology tracks</p>
+            </article>
+            <article class="stat-card">
+                <p class="stat-label">Active</p>
+                <p class="stat-value">986</p>
+                <p class="stat-meta">Eligible for new applications</p>
+            </article>
+            <article class="stat-card">
+                <p class="stat-label">Placed</p>
+                <p class="stat-value">218</p>
+                <p class="stat-meta">Joining completed</p>
+            </article>
+            <article class="stat-card">
+                <p class="stat-label">Blocked / inactive</p>
+                <p class="stat-value">44</p>
+                <p class="stat-meta">Require administrator review</p>
+            </article>
+        </section>
+
+        <div class="note">
+            <div>
+                <strong>Eligibility engine preview</strong>
+                The Java backend validates qualification, passing year, minimum percentage, active backlogs and technology overlap before an application is accepted.
+            </div>
+        </div>
+
+        <section class="card toolbar">
+            <div class="filters">
+                <div class="search-inline">
+                    <input class="input" type="text" placeholder="Search candidate" aria-label="Search candidate">
+                </div>
+                <select class="select" aria-label="Qualification">
+                    <option>All qualifications</option>
+                    <option>B.Tech</option>
+                    <option>BCA</option>
+                    <option>MCA</option>
+                    <option>B.Sc</option>
+                </select>
+                <select class="select" aria-label="Technology">
+                    <option>All technologies</option>
+                    <option>Java</option>
+                    <option>Python</option>
+                    <option>Testing</option>
+                    <option>Cloud</option>
+                </select>
+                <select class="select" aria-label="Status">
+                    <option>All statuses</option>
+                    <option>Active</option>
+                    <option>Placed</option>
+                    <option>Blocked</option>
+                </select>
+            </div>
+            <button class="btn btn-ghost btn-sm" type="button">More filters</button>
+        </section>
+
+        <section class="card">
+            <div class="table-wrap" style="padding: 8px 20px 0;">
+                <table>
+                    <thead>
+                    <tr>
+                        <th style="width:30px;"><input type="checkbox" aria-label="Select all"></th>
+                        <th>Candidate</th>
+                        <th>Registration</th>
+                        <th>Qualification</th>
+                        <th>Passing year</th>
+                        <th>Percentage</th>
+                        <th>Technology</th>
+                        <th>Backlogs</th>
+                        <th>Applications</th>
+                        <th>Status</th>
+                        <th></th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td><input type="checkbox" aria-label="Select Aarav Sharma"></td>
+                        <td><div class="person"><span class="person-avatar">AS</span><div><span class="cell-strong">Aarav Sharma</span><span class="cell-sub">aarav.sharma@example.com</span></div></div></td>
+                        <td class="cell-strong">KA2026001</td>
+                        <td>B.Tech</td>
+                        <td>2025</td>
+                        <td class="cell-strong">78.50%</td>
+                        <td><span class="tag">Java</span><span class="tag">Spring</span></td>
+                        <td>0</td>
+                        <td>3</td>
+                        <td><span class="badge badge-success">Active</span></td>
+                        <td class="right"><button class="btn btn-ghost btn-sm" type="button">View</button></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" aria-label="Select Diya Patel"></td>
+                        <td><div class="person"><span class="person-avatar alt-2">DP</span><div><span class="cell-strong">Diya Patel</span><span class="cell-sub">diya.patel@example.com</span></div></div></td>
+                        <td class="cell-strong">KA2026002</td>
+                        <td>B.Tech</td>
+                        <td>2025</td>
+                        <td class="cell-strong">68.00%</td>
+                        <td><span class="tag">Python</span><span class="tag">SQL</span></td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td><span class="badge badge-success">Active</span></td>
+                        <td class="right"><button class="btn btn-ghost btn-sm" type="button">View</button></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" aria-label="Select Rohan Verma"></td>
+                        <td><div class="person"><span class="person-avatar alt-1">RV</span><div><span class="cell-strong">Rohan Verma</span><span class="cell-sub">rohan.verma@example.com</span></div></div></td>
+                        <td class="cell-strong">KA2026003</td>
+                        <td>BCA</td>
+                        <td>2024</td>
+                        <td class="cell-strong">72.00%</td>
+                        <td><span class="tag">Java</span><span class="tag">Selenium</span></td>
+                        <td>0</td>
+                        <td>4</td>
+                        <td><span class="badge badge-success">Active</span></td>
+                        <td class="right"><button class="btn btn-ghost btn-sm" type="button">View</button></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" aria-label="Select Ishita Nair"></td>
+                        <td><div class="person"><span class="person-avatar alt-3">IN</span><div><span class="cell-strong">Ishita Nair</span><span class="cell-sub">ishita.nair@example.com</span></div></div></td>
+                        <td class="cell-strong">KA2026004</td>
+                        <td>MCA</td>
+                        <td>2025</td>
+                        <td class="cell-strong">81.20%</td>
+                        <td><span class="tag">Java</span><span class="tag">Hibernate</span></td>
+                        <td>0</td>
+                        <td>5</td>
+                        <td><span class="badge badge-success">Active</span></td>
+                        <td class="right"><button class="btn btn-ghost btn-sm" type="button">View</button></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" aria-label="Select Kabir Singh"></td>
+                        <td><div class="person"><span class="person-avatar alt-4">KS</span><div><span class="cell-strong">Kabir Singh</span><span class="cell-sub">kabir.singh@example.com</span></div></div></td>
+                        <td class="cell-strong">KA2026005</td>
+                        <td>B.Tech</td>
+                        <td>2023</td>
+                        <td class="cell-strong">59.50%</td>
+                        <td><span class="tag">Testing</span><span class="tag">SQL</span></td>
+                        <td>2</td>
+                        <td>1</td>
+                        <td><span class="badge badge-warning">Blocked</span></td>
+                        <td class="right"><button class="btn btn-ghost btn-sm" type="button">View</button></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" aria-label="Select Meera Joshi"></td>
+                        <td><div class="person"><span class="person-avatar alt-2">MJ</span><div><span class="cell-strong">Meera Joshi</span><span class="cell-sub">meera.joshi@example.com</span></div></div></td>
+                        <td class="cell-strong">KA2026006</td>
+                        <td>B.Sc</td>
+                        <td>2025</td>
+                        <td class="cell-strong">75.00%</td>
+                        <td><span class="tag">Python</span><span class="tag">AWS</span></td>
+                        <td>0</td>
+                        <td>2</td>
+                        <td><span class="badge badge-violet">Placed</span></td>
+                        <td class="right"><button class="btn btn-ghost btn-sm" type="button">View</button></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" aria-label="Select Nikhil Kulkarni"></td>
+                        <td><div class="person"><span class="person-avatar">NK</span><div><span class="cell-strong">Nikhil Kulkarni</span><span class="cell-sub">nikhil.k@example.com</span></div></div></td>
+                        <td class="cell-strong">KA2025114</td>
+                        <td>B.Tech</td>
+                        <td>2024</td>
+                        <td class="cell-strong">76.40%</td>
+                        <td><span class="tag">Java</span><span class="tag">MySQL</span></td>
+                        <td>0</td>
+                        <td>6</td>
+                        <td><span class="badge badge-violet">Placed</span></td>
+                        <td class="right"><button class="btn btn-ghost btn-sm" type="button">View</button></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" aria-label="Select Sneha Pillai"></td>
+                        <td><div class="person"><span class="person-avatar alt-2">SP</span><div><span class="cell-strong">Sneha Pillai</span><span class="cell-sub">sneha.pillai@example.com</span></div></div></td>
+                        <td class="cell-strong">KA2025098</td>
+                        <td>MCA</td>
+                        <td>2024</td>
+                        <td class="cell-strong">74.10%</td>
+                        <td><span class="tag">Python</span><span class="tag">Pandas</span></td>
+                        <td>0</td>
+                        <td>4</td>
+                        <td><span class="badge badge-violet">Placed</span></td>
+                        <td class="right"><button class="btn btn-ghost btn-sm" type="button">View</button></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="pagination">
+                <span>Showing 1-8 of 1,248 candidates</span>
+                <div class="pages">
+                    <a href="#" aria-label="Previous page">&lt;</a>
+                    <a class="active" href="#">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">...</a>
+                    <a href="#">156</a>
+                    <a href="#" aria-label="Next page">&gt;</a>
+                </div>
+            </div>
+        </section>
+    </main>
+</div>
+</body>
+</html>

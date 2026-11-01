@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HireTrack | Interviews</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div class="layout">
+    <aside class="sidebar">
+        <div class="brand">
+            <span class="brand-mark">HT</span>
+            <div><strong>HireTrack</strong><span>Placement Cell</span></div>
+        </div>
+        <nav>
+            <p class="nav-label">Workspace</p>
+            <div class="nav">
+                <a href="index.html"><span class="nav-dot"></span>Dashboard</a>
+                <a href="candidates.html"><span class="nav-dot"></span>Candidates</a>
+                <a href="companies.html"><span class="nav-dot"></span>Companies</a>
+                <a href="jobs.html"><span class="nav-dot"></span>Job Openings</a>
+                <a href="applications.html"><span class="nav-dot"></span>Applications</a>
+                <a class="active" href="interviews.html"><span class="nav-dot"></span>Interviews</a>
+                <a href="placements.html"><span class="nav-dot"></span>Placements</a>
+            </div>
+        </nav>
+        <div class="sidebar-footer">
+            <strong>Round based tracking</strong>
+            Each interview round carries its own schedule, interviewer, mode, feedback and result.
+        </div>
+    </aside>
+
+    <main class="main">
+        <header class="topbar">
+            <div class="search">
+                <input type="text" placeholder="Search interview, candidate or interviewer..." aria-label="Search">
+                <kbd>Ctrl K</kbd>
+            </div>
+            <div class="top-actions">
+                <button class="icon-button" type="button" aria-label="Notifications">
+                    <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                        <path d="M18 8a6 6 0 1 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9"></path>
+                        <path d="M10 21h4"></path>
+                    </svg>
+                    <span class="notification-dot"></span>
+                </button>
+                <div class="user-chip">
+                    <span class="avatar">RC</span>
+                    <div><strong>Priya Menon</strong><small>Recruiter</small></div>
+                </div>
+            </div>
+        </header>
+
+        <section class="page-head">
+            <div>
+                <p class="eyebrow">Interview desk</p>
+                <h1>Interviews &amp; feedback</h1>
+                <p class="subtitle">Schedule rounds, capture structured feedback and move candidates toward selection.</p>
+            </div>
+            <div class="actions">
+                <button class="btn btn-ghost" type="button">Calendar view</button>
+                <button class="btn btn-primary" type="button">+ Schedule interview</button>
+            </div>
+        </section>
+
+        <section class="stat-grid" style="grid-template-columns: repeat(4, minmax(0, 1fr));">
+            <article class="stat-card">
+                <p class="stat-label">Upcoming rounds</p>
+                <p class="stat-value">27</p>
+                <p class="stat-meta">Next 7 days</p>
+            </article>
+            <article class="stat-card">
+                <p class="stat-label">Completed</p>
+                <p class="stat-value">326</p>
+                <p class="stat-meta">Feedback submitted for 84%</p>
+            </article>
+            <article class="stat-card">
+                <p class="stat-label">Awaiting feedback</p>
+                <p class="stat-value">19</p>
+                <p class="stat-meta">Recruiter action required</p>
+            </article>
+            <article class="stat-card">
+                <p class="stat-label">Pass rate</p>
+                <p class="stat-value">62%</p>
+                <p class="stat-meta">Across completed rounds</p>
+            </article>
+        </section>
+
+        <section class="grid-2">
+            <article class="card">
+                <div class="card-head">
+                    <div>
+                        <h2>Today and tomorrow</h2>
+                        <p>Confirmed interview slots</p>
+                    </div>
+                    <span class="badge badge-info">4 scheduled</span>
+                </div>
+                <div class="card-body">
+                    <div class="schedule-list">
+                        <div class="schedule-item">
+                            <div class="schedule-date"><strong>02</strong><span>Nov</span></div>
+                            <div class="schedule-info">
+                                <strong>Rohan Verma &middot; QA Automation Engineer</strong>
+                                <p>TechNova Solutions &middot; Technical Round 1 &middot; Priya Menon</p>
+                            </div>
+                            <div class="schedule-time">10:30 AM<span>Video call</span></div>
+                        </div>
+                        <div class="schedule-item">
+                            <div class="schedule-date"><strong>02</strong><span>Nov</span></div>
+                            <div class="schedule-info">
+                                <strong>Aditi Bose &middot; Java Developer</strong>
+                                <p>FinEdge Technologies &middot; Technical Round 1 &middot; Vikram Shah</p>
+                            </div>
+                            <div class="schedule-time">02:00 PM<span>In person</span></div>
+                        </div>
+                        <div class="schedule-item">
+                            <div class="schedule-date"><strong>03</strong><span>Nov</span></div>
+                            <div class="schedule-info">
+                                <strong>Ishita Nair &middot; Java Developer</strong>
+                                <p>FinEdge Technologies &middot; Managerial Round &middot; Vikram Shah</p>
+                            </div>
+                            <div class="schedule-time">11:30 AM<span>In person</span></div>
+                        </div>
+                        <div class="schedule-item">
+                            <div class="schedule-date"><strong>03</strong><span>Nov</span></div>
+                            <div class="schedule-info">
+                                <strong>Vikram Desai &middot; Data Analyst</strong>
+                                <p>DataBridge Systems &middot; Technical Round 1 &middot; Arjun Rao</p>
+                            </div>
+                            <div class="schedule-time">03:30 PM<span>Video call</span></div>
+                        </div>
+                    </div>
+                    <div class="note" style="margin:16px 0 0;">
+                        <div>
+                            <strong>Reminder</strong>
+                            The Java workflow moves the application to INTERVIEW_SCHEDULED automatically when a round is created.
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="card-head">
+                    <div>
+                        <h2>Feedback capture</h2>
+                        <p>Structured scorecard for an interview round</p>
+                    </div>
+                    <span class="badge badge-neutral">Preview</span>
+                </div>
+                <div class="card-body">
+                    <div class="field" style="margin-bottom:14px;">
+                        <label for="candidate">Candidate &amp; round</label>
+                        <select class="select" id="candidate" style="width:100%;">
+                            <option>Rohan Verma &middot; QA Automation &middot; Technical Round 1</option>
+                            <option>Ishita Nair &middot; Java Developer &middot; Managerial Round</option>
+                        </select>
+                    </div>
+                    <div class="rating-row">
+                        <span>Technical knowledge</span>
+                        <span class="stars"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span>
+                    </div>
+                    <div class="rating-row">
+                        <span>Communication</span>
+                        <span class="stars"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></span>
+                    </div>
+                    <div class="rating-row">
+                        <span>Attitude &amp; culture fit</span>
+                        <span class="stars"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span>
+                    </div>
+                    <div class="field" style="margin-top:14px;">
+                        <label for="comments">Interviewer comments</label>
+                        <textarea class="textarea" id="comments" placeholder="Strong core Java and Selenium fundamentals. Good communication, recommended for the next round."></textarea>
+                    </div>
+                    <div class="field" style="margin-top:14px;">
+                        <label for="result">Result</label>
+                        <select class="select" id="result" style="width:100%;">
+                            <option>PASS - move to next round</option>
+                            <option>FAIL - reject application</option>
+                            <option>ON HOLD - review later</option>
+                        </select>
+                    </div>
+                    <div class="actions" style="margin-top:16px;">
+                        <button class="btn btn-primary" type="button">Submit feedback</button>
+                        <button class="btn btn-ghost" type="button">Save draft</button>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <section class="card" style="margin-top:20px;">
+            <div class="card-head">
+                <div>
+                    <h2>Interview register</h2>
+                    <p>All rounds with scheduling and completion status</p>
+                </div>
+                <div class="actions">
+                    <select class="select" aria-label="Filter interviews">
+                        <option>All rounds</option>
+                        <option>Scheduled</option>
+                        <option>Completed</option>
+                        <option>Cancelled</option>
+                    </select>
+                </div>
+            </div>
+            <div class="table-wrap" style="padding: 12px 22px 22px;">
+                <table>
+                    <thead>
+                    <tr>
+                        <th>Interview</th>
+                        <th>Application</th>
+                        <th>Candidate</th>
+                        <th>Company / Role</th>
+                        <th>Round</th>
+                        <th>Schedule</th>
+                        <th>Interviewer</th>
+                        <th>Mode</th>
+                        <th>Status</th>
+                        <th>Result</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td class="cell-strong">#201</td>
+                        <td>#10031</td>
+                        <td><div class="person"><span class="person-avatar alt-1">RV</span><span class="cell-strong">Rohan Verma</span></div></td>
+                        <td><span class="cell-strong">TechNova</span><span class="cell-sub">QA Automation Engineer</span></td>
+                        <td>Technical R1</td>
+                        <td class="nowrap">02 Nov, 10:30</td>
+                        <td>Priya Menon</td>
+                        <td>Video</td>
+                        <td><span class="badge badge-info">Scheduled</span></td>
+                        <td class="muted">Pending</td>
+                    </tr>
+                    <tr>
+                        <td class="cell-strong">#202</td>
+                        <td>#10044</td>
+                        <td><div class="person"><span class="person-avatar alt-3">IN</span><span class="cell-strong">Ishita Nair</span></div></td>
+                        <td><span class="cell-strong">FinEdge</span><span class="cell-sub">Java Developer</span></td>
+                        <td>Managerial</td>
+                        <td class="nowrap">03 Nov, 11:30</td>
+                        <td>Vikram Shah</td>
+                        <td>In person</td>
+                        <td><span class="badge badge-warning">Awaiting</span></td>
+                        <td class="muted">Pending</td>
+                    </tr>
+                    <tr>
+                        <td class="cell-strong">#198</td>
+                        <td>#10023</td>
+                        <td><div class="person"><span class="person-avatar">AS</span><span class="cell-strong">Aarav Sharma</span></div></td>
+                        <td><span class="cell-strong">TechNova</span><span class="cell-sub">Java Backend Developer</span></td>
+                        <td>Technical R1</td>
+                        <td class="nowrap">29 Oct, 14:00</td>
+                        <td>Priya Menon</td>
+                        <td>Video</td>
+                        <td><span class="badge badge-success">Completed</span></td>
+                        <td><span class="badge badge-success">Pass</span></td>
+                    </tr>
+                    <tr>
+                        <td class="cell-strong">#197</td>
+                        <td>#10012</td>
+                        <td><div class="person"><span class="person-avatar alt-2">DP</span><span class="cell-strong">Diya Patel</span></div></td>
+                        <td><span class="cell-strong">DataBridge</span><span class="cell-sub">Data Analyst</span></td>
+                        <td>Technical R1</td>
+                        <td class="nowrap">28 Oct, 10:00</td>
+                        <td>Arjun Rao</td>
+                        <td>Video</td>
+                        <td><span class="badge badge-success">Completed</span></td>
+                        <td><span class="badge badge-info">On hold</span></td>
+                    </tr>
+                    <tr>
+                        <td class="cell-strong">#193</td>
+                        <td>#09981</td>
+                        <td><div class="person"><span class="person-avatar alt-4">KS</span><span class="cell-strong">Kabir Singh</span></div></td>
+                        <td><span class="cell-strong">TechNova</span><span class="cell-sub">QA Automation Engineer</span></td>
+                        <td>HR Round</td>
+                        <td class="nowrap">25 Oct, 16:00</td>
+                        <td>Neha Kulkarni</td>
+                        <td>Telephonic</td>
+                        <td><span class="badge badge-danger">No show</span></td>
+                        <td class="muted">Not applicable</td>
+                    </tr>
+                    <tr>
+                        <td class="cell-strong">#190</td>
+                        <td>#09953</td>
+                        <td><div class="person"><span class="person-avatar alt-2">MJ</span><span class="cell-strong">Meera Joshi</span></div></td>
+                        <td><span class="cell-strong">CloudSprint</span><span class="cell-sub">Cloud Support Associate</span></td>
+                        <td>Technical R1</td>
+                        <td class="nowrap">22 Oct, 12:30</td>
+                        <td>Neha Kulkarni</td>
+                        <td>Video</td>
+                        <td><span class="badge badge-success">Completed</span></td>
+                        <td><span class="badge badge-success">Pass</span></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+</div>
+</body>
+</html>

@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HireTrack | Applications</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div class="layout">
+    <aside class="sidebar">
+        <div class="brand">
+            <span class="brand-mark">HT</span>
+            <div><strong>HireTrack</strong><span>Placement Cell</span></div>
+        </div>
+        <nav>
+            <p class="nav-label">Workspace</p>
+            <div class="nav">
+                <a href="index.html"><span class="nav-dot"></span>Dashboard</a>
+                <a href="candidates.html"><span class="nav-dot"></span>Candidates</a>
+                <a href="companies.html"><span class="nav-dot"></span>Companies</a>
+                <a href="jobs.html"><span class="nav-dot"></span>Job Openings</a>
+                <a class="active" href="applications.html"><span class="nav-dot"></span>Applications</a>
+                <a href="interviews.html"><span class="nav-dot"></span>Interviews</a>
+                <a href="placements.html"><span class="nav-dot"></span>Placements</a>
+            </div>
+        </nav>
+        <div class="sidebar-footer">
+            <strong>State machine protected</strong>
+            Applications move only through valid transitions. Duplicate applications are blocked by a unique constraint.
+        </div>
+    </aside>
+
+    <main class="main">
+        <header class="topbar">
+            <div class="search">
+                <input type="text" placeholder="Search candidate or application number..." aria-label="Search">
+                <kbd>Ctrl K</kbd>
+            </div>
+            <div class="top-actions">
+                <button class="icon-button" type="button" aria-label="Notifications">
+                    <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                        <path d="M18 8a6 6 0 1 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9"></path>
+                        <path d="M10 21h4"></path>
+                    </svg>
+                    <span class="notification-dot"></span>
+                </button>
+                <div class="user-chip">
+                    <span class="avatar">RC</span>
+                    <div><strong>Priya Menon</strong><small>Recruiter</small></div>
+                </div>
+            </div>
+        </header>
+
+        <section class="page-head">
+            <div>
+                <p class="eyebrow">Recruitment workflow</p>
+                <h1>Applications</h1>
+                <p class="subtitle">Move candidates through shortlisting, interviews, selection and offer stages.</p>
+            </div>
+            <div class="actions">
+                <button class="btn btn-ghost" type="button">Filter</button>
+                <button class="btn btn-primary" type="button">+ Add application</button>
+            </div>
+        </section>
+
+        <div class="note warning">
+            <div>
+                <strong>Workflow rules</strong>
+                An application cannot skip stages. JOINED is reached only after an accepted offer and a recorded joining. Rejected and withdrawn applications are terminal.
+            </div>
+        </div>
+
+        <section class="stat-grid" style="grid-template-columns: repeat(4, minmax(0, 1fr));">
+            <article class="stat-card">
+                <p class="stat-label">Total applications</p>
+                <p class="stat-value">1,120</p>
+                <p class="stat-meta">Across 42 open roles</p>
+            </article>
+            <article class="stat-card">
+                <p class="stat-label">In interview</p>
+                <p class="stat-value">459</p>
+                <p class="stat-meta">41% of applications</p>
+            </article>
+            <article class="stat-card">
+                <p class="stat-label">Selected</p>
+                <p class="stat-value">198</p>
+                <p class="stat-meta">Awaiting offer or joining</p>
+            </article>
+            <article class="stat-card">
+                <p class="stat-label">Joined</p>
+                <p class="stat-value">86</p>
+                <p class="stat-meta">Placements completed</p>
+            </article>
+        </section>
+
+        <section class="card toolbar">
+            <div class="filters">
+                <div class="search-inline">
+                    <input class="input" type="text" placeholder="Search applications" aria-label="Search applications">
+                </div>
+                <select class="select" aria-label="Company">
+                    <option>All companies</option>
+                    <option>TechNova Solutions</option>
+                    <option>DataBridge Systems</option>
+                    <option>CloudSprint Labs</option>
+                    <option>FinEdge Technologies</option>
+                </select>
+                <select class="select" aria-label="Technology">
+                    <option>All technologies</option>
+                    <option>Java</option>
+                    <option>Python</option>
+                    <option>Testing</option>
+                    <option>AWS</option>
+                </select>
+            </div>
+            <span class="badge badge-neutral">Kanban view</span>
+        </section>
+
+        <section class="kanban">
+            <div class="kanban-col">
+                <div class="kanban-head"><span>Applied</span><span class="count">312</span></div>
+                <article class="kanban-card">
+                    <h4>Aarav Sharma</h4>
+                    <p>Java Backend Developer</p>
+                    <div class="meta"><span>TechNova</span><span>KA2026001</span></div>
+                </article>
+                <article class="kanban-card">
+                    <h4>Diya Patel</h4>
+                    <p>Data Analyst</p>
+                    <div class="meta"><span>DataBridge</span><span>KA2026002</span></div>
+                </article>
+                <article class="kanban-card">
+                    <h4>Sneha Pillai</h4>
+                    <p>Cloud Support Associate</p>
+                    <div class="meta"><span>CloudSprint</span><span>KA2025098</span></div>
+                </article>
+                <article class="kanban-card">
+                    <h4>Arjun Kapoor</h4>
+                    <p>Business Analyst</p>
+                    <div class="meta"><span>FinEdge</span><span>KA2025077</span></div>
+                </article>
+                <article class="kanban-card">
+                    <h4>Neha Reddy</h4>
+                    <p>QA Automation Engineer</p>
+                    <div class="meta"><span>TechNova</span><span>KA2026011</span></div>
+                </article>
+            </div>
+
+            <div class="kanban-col">
+                <div class="kanban-head"><span>Shortlisted</span><span class="count">264</span></div>
+                <article class="kanban-card">
+                    <h4>Ishita Nair</h4>
+                    <p>Java Backend Developer</p>
+                    <div class="meta"><span>TechNova</span><span class="badge badge-info">R1 pending</span></div>
+                </article>
+                <article class="kanban-card">
+                    <h4>Rahul Mehta</h4>
+                    <p>Data Analyst</p>
+                    <div class="meta"><span>DataBridge</span><span class="badge badge-info">R1 pending</span></div>
+                </article>
+                <article class="kanban-card">
+                    <h4>Pooja Iyer</h4>
+                    <p>Java Developer</p>
+                    <div class="meta"><span>FinEdge</span><span class="badge badge-info">R1 pending</span></div>
+                </article>
+                <article class="kanban-card">
+                    <h4>Karan Malhotra</h4>
+                    <p>Cloud Support Associate</p>
+                    <div class="meta"><span>CloudSprint</span><span class="badge badge-info">R1 pending</span></div>
+                </article>
+            </div>
+
+            <div class="kanban-col">
+                <div class="kanban-head"><span>Interview</span><span class="count">188</span></div>
+                <article class="kanban-card">
+                    <h4>Rohan Verma</h4>
+                    <p>QA Automation Engineer</p>
+                    <div class="meta"><span>02 Nov, 10:30</span><span class="badge badge-warning">Scheduled</span></div>
+                </article>
+                <article class="kanban-card">
+                    <h4>Aditi Bose</h4>
+                    <p>Java Developer</p>
+                    <div class="meta"><span>03 Nov, 09:00</span><span class="badge badge-warning">Scheduled</span></div>
+                </article>
+                <article class="kanban-card">
+                    <h4>Vikram Desai</h4>
+                    <p>Data Analyst</p>
+                    <div class="meta"><span>03 Nov, 15:30</span><span class="badge badge-warning">Scheduled</span></div>
+                </article>
+                <article class="kanban-card">
+                    <h4>Aarav Sharma</h4>
+                    <p>Java Backend Developer</p>
+                    <div class="meta"><span>05 Nov, 16:30</span><span class="badge badge-violet">HR round</span></div>
+                </article>
+            </div>
+
+            <div class="kanban-col">
+                <div class="kanban-head"><span>Selected</span><span class="count">112</span></div>
+                <article class="kanban-card">
+                    <h4>Meera Joshi</h4>
+                    <p>Cloud Support Associate</p>
+                    <div class="meta"><span>CloudSprint</span><span class="badge badge-success">Offer ready</span></div>
+                </article>
+                <article class="kanban-card">
+                    <h4>Nikhil Kulkarni</h4>
+                    <p>Java Backend Developer</p>
+                    <div class="meta"><span>TechNova</span><span class="badge badge-success">Offer ready</span></div>
+                </article>
+                <article class="kanban-card">
+                    <h4>Ritika Jain</h4>
+                    <p>Data Analyst</p>
+                    <div class="meta"><span>DataBridge</span><span class="badge badge-success">Offer ready</span></div>
+                </article>
+            </div>
+
+            <div class="kanban-col">
+                <div class="kanban-head"><span>Offer / Joined</span><span class="count">86</span></div>
+                <article class="kanban-card">
+                    <h4>Meera Joshi</h4>
+                    <p>Cloud Support Associate</p>
+                    <div class="meta"><span>4.80 LPA</span><span class="badge badge-violet">Accepted</span></div>
+                </article>
+                <article class="kanban-card">
+                    <h4>Nikhil Kulkarni</h4>
+                    <p>Java Backend Developer</p>
+                    <div class="meta"><span>7.50 LPA</span><span class="badge badge-success">Joined</span></div>
+                </article>
+                <article class="kanban-card">
+                    <h4>Sneha Pillai</h4>
+                    <p>Data Analyst</p>
+                    <div class="meta"><span>6.50 LPA</span><span class="badge badge-success">Joined</span></div>
+                </article>
+                <article class="kanban-card">
+                    <h4>Arjun Kapoor</h4>
+                    <p>Business Analyst</p>
+                    <div class="meta"><span>6.00 LPA</span><span class="badge badge-info">Onboarding</span></div>
+                </article>
+            </div>
+        </section>
+
+        <section class="card" style="margin-top:20px;">
+            <div class="card-head">
+                <div>
+                    <h2>Application detail preview</h2>
+                    <p>Application #10023 &middot; Aarav Sharma &middot; Java Backend Developer at TechNova Solutions</p>
+                </div>
+                <span class="badge badge-info">APPLIED</span>
+            </div>
+            <div class="card-body">
+                <div class="two-col">
+                    <div>
+                        <div class="metric-row" style="grid-template-columns: 120px 1fr;">
+                            <span class="muted">Candidate</span><span class="cell-strong">Aarav Sharma (KA2026001)</span>
+                        </div>
+                        <div class="metric-row" style="grid-template-columns: 120px 1fr;">
+                            <span class="muted">Eligibility</span><span class="badge badge-success">Passed</span>
+                        </div>
+                        <div class="metric-row" style="grid-template-columns: 120px 1fr;">
+                            <span class="muted">Applied on</span><span>28 Oct 2026, 11:02</span>
+                        </div>
+                        <div class="metric-row" style="grid-template-columns: 120px 1fr;">
+                            <span class="muted">Next action</span><span>Recruiter shortlisting</span>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="metric-row" style="grid-template-columns: 120px 1fr;">
+                            <span class="muted">Qualification</span><span>B.Tech, 2025</span>
+                        </div>
+                        <div class="metric-row" style="grid-template-columns: 120px 1fr;">
+                            <span class="muted">Percentage</span><span>78.50%</span>
+                        </div>
+                        <div class="metric-row" style="grid-template-columns: 120px 1fr;">
+                            <span class="muted">Backlogs</span><span>0</span>
+                        </div>
+                        <div class="metric-row" style="grid-template-columns: 120px 1fr;">
+                            <span class="muted">Technology match</span><span class="badge badge-success">Java, Spring Boot</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="divider"></div>
+                <div class="actions">
+                    <button class="btn btn-primary btn-sm" type="button">Shortlist</button>
+                    <button class="btn btn-soft btn-sm" type="button">Put on hold</button>
+                    <button class="btn btn-danger btn-sm" type="button">Reject</button>
+                    <button class="btn btn-ghost btn-sm" type="button">View audit history</button>
+                </div>
+            </div>
+        </section>
+    </main>
+</div>
+</body>
+</html>

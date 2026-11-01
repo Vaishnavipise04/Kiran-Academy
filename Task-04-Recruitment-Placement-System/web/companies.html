@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HireTrack | Companies</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div class="layout">
+    <aside class="sidebar">
+        <div class="brand">
+            <span class="brand-mark">HT</span>
+            <div><strong>HireTrack</strong><span>Placement Cell</span></div>
+        </div>
+        <nav>
+            <p class="nav-label">Workspace</p>
+            <div class="nav">
+                <a href="index.html"><span class="nav-dot"></span>Dashboard</a>
+                <a href="candidates.html"><span class="nav-dot"></span>Candidates</a>
+                <a class="active" href="companies.html"><span class="nav-dot"></span>Companies</a>
+                <a href="jobs.html"><span class="nav-dot"></span>Job Openings</a>
+                <a href="applications.html"><span class="nav-dot"></span>Applications</a>
+                <a href="interviews.html"><span class="nav-dot"></span>Interviews</a>
+                <a href="placements.html"><span class="nav-dot"></span>Placements</a>
+            </div>
+        </nav>
+        <div class="sidebar-footer">
+            <strong>Partner management</strong>
+            Track company profiles, hiring contacts, active drives and historical placement performance.
+        </div>
+    </aside>
+
+    <main class="main">
+        <header class="topbar">
+            <div class="search">
+                <input type="text" placeholder="Search companies, contacts or city..." aria-label="Search">
+                <kbd>Ctrl K</kbd>
+            </div>
+            <div class="top-actions">
+                <button class="icon-button" type="button" aria-label="Notifications">
+                    <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                        <path d="M18 8a6 6 0 1 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9"></path>
+                        <path d="M10 21h4"></path>
+                    </svg>
+                    <span class="notification-dot"></span>
+                </button>
+                <div class="user-chip">
+                    <span class="avatar">RC</span>
+                    <div><strong>Priya Menon</strong><small>Recruiter</small></div>
+                </div>
+            </div>
+        </header>
+
+        <section class="page-head">
+            <div>
+                <p class="eyebrow">Partner network</p>
+                <h1>Companies</h1>
+                <p class="subtitle">Maintain recruiting partners, their hiring contacts, active drives and placement outcomes.</p>
+            </div>
+            <div class="actions">
+                <button class="btn btn-ghost" type="button">Export partners</button>
+                <button class="btn btn-primary" type="button">+ Add company</button>
+            </div>
+        </section>
+
+        <section class="stat-grid" style="grid-template-columns: repeat(4, minmax(0, 1fr));">
+            <article class="stat-card">
+                <p class="stat-label">Partner companies</p>
+                <p class="stat-value">28</p>
+                <p class="stat-meta">22 active, 6 inactive</p>
+            </article>
+            <article class="stat-card">
+                <p class="stat-label">Active drives</p>
+                <p class="stat-value">42</p>
+                <p class="stat-meta">Open job openings</p>
+            </article>
+            <article class="stat-card">
+                <p class="stat-label">Offers released</p>
+                <p class="stat-value">198</p>
+                <p class="stat-meta">This academic year</p>
+            </article>
+            <article class="stat-card">
+                <p class="stat-label">Highest package</p>
+                <p class="stat-value">12.0</p>
+                <p class="stat-meta">LPA offered to a candidate</p>
+            </article>
+        </section>
+
+        <section class="card toolbar">
+            <div class="filters">
+                <div class="search-inline">
+                    <input class="input" type="text" placeholder="Search company name" aria-label="Search company name">
+                </div>
+                <select class="select" aria-label="Industry">
+                    <option>All industries</option>
+                    <option>IT Services</option>
+                    <option>Product Engineering</option>
+                    <option>Analytics &amp; Consulting</option>
+                    <option>Cloud &amp; Infrastructure</option>
+                </select>
+                <select class="select" aria-label="City">
+                    <option>All cities</option>
+                    <option>Bengaluru</option>
+                    <option>Pune</option>
+                    <option>Hyderabad</option>
+                    <option>Mumbai</option>
+                    <option>Gurugram</option>
+                </select>
+                <select class="select" aria-label="Status">
+                    <option>Active companies</option>
+                    <option>Inactive companies</option>
+                    <option>All statuses</option>
+                </select>
+            </div>
+            <span class="badge badge-success">22 active</span>
+        </section>
+
+        <section class="company-grid">
+            <article class="card company-card">
+                <div class="company-head">
+                    <span class="logo">TN</span>
+                    <div>
+                        <h3>TechNova Solutions</h3>
+                        <p>IT Services &middot; Bengaluru</p>
+                    </div>
+                    <span class="badge badge-success" style="margin-left:auto;">Active</span>
+                </div>
+                <div class="job-meta">
+                    <span class="chip">Java</span>
+                    <span class="chip">Spring Boot</span>
+                    <span class="chip">QA</span>
+                </div>
+                <div class="company-stats">
+                    <div><strong>3</strong><span>Open roles</span></div>
+                    <div><strong>24</strong><span>Placed</span></div>
+                    <div><strong>7.2</strong><span>Avg LPA</span></div>
+                </div>
+                <div class="contact-line"><span>Hiring contact</span><strong>Ritika Sharma</strong></div>
+                <div class="contact-line"><span>Email</span><strong>ritika@technova.example</strong></div>
+                <div class="contact-line"><span>Last drive</span><strong>15 Oct 2026</strong></div>
+                <div class="actions" style="margin-top:2px;">
+                    <button class="btn btn-ghost btn-sm" type="button">View profile</button>
+                    <button class="btn btn-soft btn-sm" type="button">Openings</button>
+                </div>
+            </article>
+
+            <article class="card company-card">
+                <div class="company-head">
+                    <span class="logo green">DB</span>
+                    <div>
+                        <h3>DataBridge Systems</h3>
+                        <p>Analytics &amp; Consulting &middot; Hyderabad</p>
+                    </div>
+                    <span class="badge badge-success" style="margin-left:auto;">Active</span>
+                </div>
+                <div class="job-meta">
+                    <span class="chip">Python</span>
+                    <span class="chip">SQL</span>
+                    <span class="chip">Power BI</span>
+                </div>
+                <div class="company-stats">
+                    <div><strong>1</strong><span>Open role</span></div>
+                    <div><strong>18</strong><span>Placed</span></div>
+                    <div><strong>6.6</strong><span>Avg LPA</span></div>
+                </div>
+                <div class="contact-line"><span>Hiring contact</span><strong>Anil Kumar</strong></div>
+                <div class="contact-line"><span>Email</span><strong>anil@databridge.example</strong></div>
+                <div class="contact-line"><span>Last drive</span><strong>08 Oct 2026</strong></div>
+                <div class="actions" style="margin-top:2px;">
+                    <button class="btn btn-ghost btn-sm" type="button">View profile</button>
+                    <button class="btn btn-soft btn-sm" type="button">Openings</button>
+                </div>
+            </article>
+
+            <article class="card company-card">
+                <div class="company-head">
+                    <span class="logo blue">CS</span>
+                    <div>
+                        <h3>CloudSprint Labs</h3>
+                        <p>Cloud &amp; Infrastructure &middot; Remote</p>
+                    </div>
+                    <span class="badge badge-success" style="margin-left:auto;">Active</span>
+                </div>
+                <div class="job-meta">
+                    <span class="chip">AWS</span>
+                    <span class="chip">Linux</span>
+                    <span class="chip">Networking</span>
+                </div>
+                <div class="company-stats">
+                    <div><strong>1</strong><span>Open role</span></div>
+                    <div><strong>11</strong><span>Placed</span></div>
+                    <div><strong>5.4</strong><span>Avg LPA</span></div>
+                </div>
+                <div class="contact-line"><span>Hiring contact</span><strong>Sourav Das</strong></div>
+                <div class="contact-line"><span>Email</span><strong>sourav@cloudsprint.example</strong></div>
+                <div class="contact-line"><span>Last drive</span><strong>22 Oct 2026</strong></div>
+                <div class="actions" style="margin-top:2px;">
+                    <button class="btn btn-ghost btn-sm" type="button">View profile</button>
+                    <button class="btn btn-soft btn-sm" type="button">Openings</button>
+                </div>
+            </article>
+
+            <article class="card company-card">
+                <div class="company-head">
+                    <span class="logo red">FE</span>
+                    <div>
+                        <h3>FinEdge Technologies</h3>
+                        <p>Product Engineering &middot; Mumbai</p>
+                    </div>
+                    <span class="badge badge-success" style="margin-left:auto;">Active</span>
+                </div>
+                <div class="job-meta">
+                    <span class="chip">Java</span>
+                    <span class="chip">Spring</span>
+                    <span class="chip">Fintech</span>
+                </div>
+                <div class="company-stats">
+                    <div><strong>2</strong><span>Open roles</span></div>
+                    <div><strong>9</strong><span>Placed</span></div>
+                    <div><strong>8.4</strong><span>Avg LPA</span></div>
+                </div>
+                <div class="contact-line"><span>Hiring contact</span><strong>Meghna Rao</strong></div>
+                <div class="contact-line"><span>Email</span><strong>meghna@finedge.example</strong></div>
+                <div class="contact-line"><span>Last drive</span><strong>29 Sep 2026</strong></div>
+                <div class="actions" style="margin-top:2px;">
+                    <button class="btn btn-ghost btn-sm" type="button">View profile</button>
+                    <button class="btn btn-soft btn-sm" type="button">Openings</button>
+                </div>
+            </article>
+
+            <article class="card company-card">
+                <div class="company-head">
+                    <span class="logo orange">QI</span>
+                    <div>
+                        <h3>Quantis Infotech</h3>
+                        <p>IT Services &middot; Pune</p>
+                    </div>
+                    <span class="badge badge-neutral" style="margin-left:auto;">Inactive</span>
+                </div>
+                <div class="job-meta">
+                    <span class="chip">.NET</span>
+                    <span class="chip">SQL Server</span>
+                </div>
+                <div class="company-stats">
+                    <div><strong>0</strong><span>Open roles</span></div>
+                    <div><strong>14</strong><span>Placed</span></div>
+                    <div><strong>4.9</strong><span>Avg LPA</span></div>
+                </div>
+                <div class="contact-line"><span>Hiring contact</span><strong>Deepak Joshi</strong></div>
+                <div class="contact-line"><span>Email</span><strong>deepak@quantis.example</strong></div>
+                <div class="contact-line"><span>Last drive</span><strong>12 Aug 2026</strong></div>
+                <div class="actions" style="margin-top:2px;">
+                    <button class="btn btn-ghost btn-sm" type="button">View profile</button>
+                    <button class="btn btn-soft btn-sm" type="button">Reactivate</button>
+                </div>
+            </article>
+
+            <article class="card company-card">
+                <div class="company-head">
+                    <span class="logo violet">NX</span>
+                    <div>
+                        <h3>Nexora Digital</h3>
+                        <p>Product Engineering &middot; Gurugram</p>
+                    </div>
+                    <span class="badge badge-success" style="margin-left:auto;">Active</span>
+                </div>
+                <div class="job-meta">
+                    <span class="chip">React</span>
+                    <span class="chip">Node.js</span>
+                    <span class="chip">UI/UX</span>
+                </div>
+                <div class="company-stats">
+                    <div><strong>2</strong><span>Open roles</span></div>
+                    <div><strong>6</strong><span>Placed</span></div>
+                    <div><strong>7.8</strong><span>Avg LPA</span></div>
+                </div>
+                <div class="contact-line"><span>Hiring contact</span><strong>Tanvi Bansal</strong></div>
+                <div class="contact-line"><span>Email</span><strong>tanvi@nexora.example</strong></div>
+                <div class="contact-line"><span>Last drive</span><strong>03 Oct 2026</strong></div>
+                <div class="actions" style="margin-top:2px;">
+                    <button class="btn btn-ghost btn-sm" type="button">View profile</button>
+                    <button class="btn btn-soft btn-sm" type="button">Openings</button>
+                </div>
+            </article>
+        </section>
+
+        <section class="card" style="margin-top:20px;">
+            <div class="card-head">
+                <div>
+                    <h2>Recent recruiting drives</h2>
+                    <p>Drive level participation and conversion</p>
+                </div>
+                <span class="badge badge-neutral">Academic year 2026</span>
+            </div>
+            <div class="table-wrap" style="padding: 12px 22px 22px;">
+                <table>
+                    <thead>
+                    <tr>
+                        <th>Drive</th>
+                        <th>Company</th>
+                        <th>Date</th>
+                        <th>Roles</th>
+                        <th>Applied</th>
+                        <th>Selected</th>
+                        <th>Placed</th>
+                        <th>Conversion</th>
+                        <th>Status</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td class="cell-strong">Campus Drive #48</td>
+                        <td>TechNova Solutions</td>
+                        <td class="nowrap">15 Oct 2026</td>
+                        <td>Java Backend, QA Automation</td>
+                        <td>184</td>
+                        <td>42</td>
+                        <td>24</td>
+                        <td><div class="progress" style="width:90px;"><span style="width:57%;"></span></div></td>
+                        <td><span class="badge badge-success">Completed</span></td>
+                    </tr>
+                    <tr>
+                        <td class="cell-strong">Campus Drive #47</td>
+                        <td>FinEdge Technologies</td>
+                        <td class="nowrap">29 Sep 2026</td>
+                        <td>Java Developer, Business Analyst</td>
+                        <td>142</td>
+                        <td>31</td>
+                        <td>9</td>
+                        <td><div class="progress green" style="width:90px;"><span style="width:29%;"></span></div></td>
+                        <td><span class="badge badge-success">Completed</span></td>
+                    </tr>
+                    <tr>
+                        <td class="cell-strong">Campus Drive #46</td>
+                        <td>DataBridge Systems</td>
+                        <td class="nowrap">08 Oct 2026</td>
+                        <td>Data Analyst</td>
+                        <td>96</td>
+                        <td>22</td>
+                        <td>18</td>
+                        <td><div class="progress blue" style="width:90px;"><span style="width:82%;"></span></div></td>
+                        <td><span class="badge badge-success">Completed</span></td>
+                    </tr>
+                    <tr>
+                        <td class="cell-strong">Campus Drive #49</td>
+                        <td>CloudSprint Labs</td>
+                        <td class="nowrap">12 Nov 2026</td>
+                        <td>Cloud Support Associate</td>
+                        <td>61</td>
+                        <td class="muted">&mdash;</td>
+                        <td class="muted">&mdash;</td>
+                        <td><div class="progress orange" style="width:90px;"><span style="width:18%;"></span></div></td>
+                        <td><span class="badge badge-info">In progress</span></td>
+                    </tr>
+                    <tr>
+                        <td class="cell-strong">Campus Drive #50</td>
+                        <td>Nexora Digital</td>
+                        <td class="nowrap">26 Nov 2026</td>
+                        <td>Frontend Engineer, UI/UX</td>
+                        <td class="muted">&mdash;</td>
+                        <td class="muted">&mdash;</td>
+                        <td class="muted">&mdash;</td>
+                        <td><div class="progress" style="width:90px;"><span style="width:6%;"></span></div></td>
+                        <td><span class="badge badge-neutral">Scheduled</span></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+</div>
+</body>
+</html>

@@ -44,3 +44,14 @@ Multiplication = 200
 Division = 2
 Modulus = 0
 ```
+
+---
+
+## Tasks in this repository
+
+| Task | Folder | Description |
+| --- | --- | --- |
+| Task 1 | `Hello.java` | Environment setup and basic Java programs |
+| Task 2 | `Task-02-Cab-Booking` | Cab booking console application |
+| Task 3 | `Task-03-Banking-Application` | Banking console application |
+| Task 4 | `Task-04-Recruitment-Placement-System` | HireTrack - Java + MySQL recruitment and placement management system |
