@@ -1,5 +1,16 @@
 # HireTrack — Recruitment & Placement Management System
 
+![Java 17](https://img.shields.io/badge/Java-17-orange)
+![MySQL 8](https://img.shields.io/badge/MySQL-8.x-blue)
+![Maven](https://img.shields.io/badge/Build-Maven-red)
+![JUnit 5](https://img.shields.io/badge/Tests-24%20passing-brightgreen)
+
+**Student:** Vaishnavi Pise  
+**Program:** Kiran Academy Internship — Task 4  
+**Project type:** Industry-oriented backend business application with an HTML/CSS UI
+
+**Abstract:** HireTrack manages the complete recruitment and placement lifecycle for a training institute or placement cell. It keeps candidates, companies, job openings, applications, eligibility criteria, interview rounds, feedback, offers, joining status and final placements in one structured, database-driven system. The application is built with Java, OOP, JDBC, collections, exception handling, file handling and MySQL, using a layered Model → DAO → Service → UI architecture. A rule-based eligibility engine validates qualification, passing year, percentage, technology, backlog and deadline requirements before an application proceeds.
+
 A Java + MySQL application for a college placement cell. It manages the full recruitment lifecycle: candidate registration, eligibility checks, job applications, shortlisting, interview rounds, feedback, offers, joining and placement reporting.
 
 The project includes:
@@ -8,7 +19,24 @@ The project includes:
 - A rule-based eligibility engine and guarded workflow state transitions.
 - Role-based access for administrators, recruiters and candidates.
 - CSV reporting for candidates, jobs, applications, interviews, offers, placements, pipeline and audit history.
-- Static HTML/CSS UI prototypes in `web/` that preview the intended screens.
+- Static HTML/CSS UI pages in `web/` that preview the intended screens.
+
+## Contents
+
+- [1. Tech stack](#1-tech-stack)
+- [2. Features](#2-features)
+- [3. Architecture](#3-architecture)
+- [4. Database design](#4-database-design)
+- [5. Setup](#5-setup)
+- [6. Demo accounts](#6-demo-accounts)
+- [7. Sample data](#7-sample-data)
+- [8. Demo walkthrough](#8-demo-walkthrough)
+- [9. Console menus](#9-console-menus)
+- [10. Build and test](#10-build-and-test)
+- [11. HTML/CSS UI prototypes](#11-htmlcss-ui-prototypes)
+- [12. Error handling and edge cases](#12-error-handling-and-edge-cases)
+- [13. Known limitations and future work](#13-known-limitations-and-future-work)
+- [14. Troubleshooting](#14-troubleshooting)
 
 ---
 
